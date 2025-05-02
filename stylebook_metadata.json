@@ -1,0 +1,29 @@
+{
+  "title": "한국어 스타일북",
+  "description": "자주 틀리는 말과 복수 표준어 정보를 제공하는 도구입니다.",
+  "version": "1.0",
+  "tools": [
+    {
+      "name": "search-stylebook",
+      "description": "스타일북에서 특정 어휘나 표현에 대한 정보를 검색합니다",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "description": "검색할 단어나 표현"
+          }
+        },
+        "required": ["query"]
+      }
+    },
+    {
+      "name": "list-sections",
+      "description": "스타일북의 모든 섹션 목록을 가져옵니다",
+      "schema": {
+        "type": "object",
+        "properties": {}
+      }
+    }
+  ]
+}

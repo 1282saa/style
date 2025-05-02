@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "stylebook-server": {
+      "command": "bash",
+      "args": [
+        "-c",
+        "cd '/Users/yeong-gwang/Desktop/배움 오전 1.38.42/work/서울경제신문/개발작업/MCP서버개발2' && python3 mcp_server.py > /dev/null"
+      ],
+      "env": {
+        "PYTHONPATH": "/Users/yeong-gwang/Desktop/배움 오전 1.38.42/work/서울경제신문/개발작업/MCP서버개발2"
+      }
+    }
+  }
+}

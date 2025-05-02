@@ -1,0 +1,52 @@
+{
+  "tools": [
+    {
+      "name": "search-stylebook",
+      "description": "스타일북에서 특정 어휘나 표현에 대한 정보를 검색합니다",
+      "api": {
+        "url": "https://스미더리배포URL/api/search",
+        "method": "POST"
+      },
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "description": "검색할 단어나 표현"
+          }
+        },
+        "required": ["query"]
+      }
+    },
+    {
+      "name": "check-sentence",
+      "description": "문장을 입력받아 스타일북 규칙에 따라 교정 제안을 제공합니다",
+      "api": {
+        "url": "https://스미더리배포URL/api/check-sentence",
+        "method": "POST"
+      },
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "sentence": {
+            "type": "string",
+            "description": "검사할 문장"
+          }
+        },
+        "required": ["sentence"]
+      }
+    },
+    {
+      "name": "list-sections",
+      "description": "스타일북의 모든 섹션 목록을 가져옵니다",
+      "api": {
+        "url": "https://스미더리배포URL/api/list-sections",
+        "method": "GET"
+      },
+      "input_schema": {
+        "type": "object",
+        "properties": {}
+      }
+    }
+  ]
+}
